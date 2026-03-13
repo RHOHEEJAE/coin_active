@@ -14,7 +14,6 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from 'recharts'
-import pepeHero from '../../assets/c__Users_Owner_Desktop_docker-compose_pipe_line_coin_active_pepe.jpg'
 
 export default function DashboardPage() {
   const [topHolders, setTopHolders] = useState<TopHolder[]>([])
@@ -93,7 +92,7 @@ export default function DashboardPage() {
           </div>
           <div className="hero-pepe">
             <Image
-              src={pepeHero}
+              src="/pepe.jpg"
               alt="Make Memecoins Great Again"
               fill
               sizes="120px"
