@@ -9,6 +9,8 @@ load_dotenv()
 # API ? (??)
 BLOCKCHAIR_API_KEY = os.getenv("BLOCKCHAIR_API_KEY", "")
 BLOCKSCOUT_API_KEY = os.getenv("BLOCKSCOUT_API_KEY", "")
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "")
+MORALIS_API_KEY = os.getenv("MORALIS_API_KEY", "")
 
 # ??
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
@@ -28,7 +30,7 @@ DATABASE_URL = (
     else f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 )
 
-# ??? ?? (PEPE, SHIB ? Blockscout ERC-20)
+# ??? ?? (PEPE, WETH ? Blockscout ERC-20)
 COINS = {
     "PEPE": {
         "name": "??",
@@ -38,10 +40,10 @@ COINS = {
         "decimals": 18,
         "top_holders_count": 100,
     },
-    "SHIB": {
-        "name": "????",
+    "WETH": {
+        "name": "Wrapped Ether",
         "fetcher": "blockscout_erc20",
-        "contract_address": "0x95aD61b0a150d79219dC64CdFf2aDCEe75dF6a51",
+        "contract_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
         "blockscout_base_url": "https://eth.blockscout.com/api",
         "decimals": 18,
         "top_holders_count": 100,
@@ -51,5 +53,5 @@ COINS = {
 # ?? N? ???
 TOP_HOLDERS_COUNT = 5
 
-# ?? ?? (?)
-CHECK_INTERVAL_SECONDS = 60
+# ?? ?? (?) ? 5??? ??
+CHECK_INTERVAL_SECONDS = 300

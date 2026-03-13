@@ -70,6 +70,19 @@ a {
 .hero-shiba {
   border: 1px solid rgba(234, 88, 12, 0.8);
 }
+.hero-weth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  height: 70px;
+  border-radius: 999px;
+  border: 1px solid rgba(96, 165, 250, 0.7);
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.4), rgba(59, 130, 246, 0.2));
+  font-size: 1rem;
+  font-weight: 600;
+  color: #93c5fd;
+}
 .grid {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);

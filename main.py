@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-PEPE, SHIB 등 상위 100명 보유자 조회 및 전원 보유량 변동 추적(매수/매도 알럿).
+PEPE, WETH 등 상위 100명 보유자 조회 및 전원 보유량 변동 추적(매수/매도 알럿).
 """
 
 import logging
@@ -25,29 +25,49 @@ logger = logging.getLogger(__name__)
 
 
 def run_check():
-    """PEPE 상위 100명 조회 → state + DB 저장, 전원 보유량 변동 시 매수/매도 알럿 기록 및 발송."""
+    """
+    5분 주기:
+    1단계) PEPE 상위 100명 저장 → WETH 상위 100명 저장 (바로 이어서)
+    2단계) PEPE 알럿 업데이트 → WETH 알럿 업데이트
+    """
+    saved_holders = {}  # symbol -> holders (2단계에서 사용)
+
+    # 1단계: 코인별 상위 100명 보유자만 저장 (PEPE → WETH 연속)
     for symbol in COINS:
         try:
+            logger.info("수집 시작: %s", symbol)
             holders = fetch_top_holders(symbol)
             if not holders:
-                logger.debug("%s: no holders fetched", symbol)
+                logger.info("%s: 조회된 보유자 없음 (API 확인 또는 키 설정 필요)", symbol)
                 continue
             save_top_holders(symbol, holders)
-            upsert_top_holders(symbol, holders, lambda raw: _raw_to_human(raw, symbol))
+            upsert_top_holders(symbol, holders, lambda raw, s=symbol: _raw_to_human(raw, s))
+            saved_holders[symbol] = holders
             logger.info("%s 상위 %d명 보유자 저장 완료 (state + DB)", symbol, len(holders))
+        except Exception as e:
+            logger.exception("Error checking %s: %s", symbol, e)
+        time.sleep(2)
+
+    # 2단계: 저장된 기준으로 알럿 업데이트 및 발송
+    for symbol in COINS:
+        if symbol not in saved_holders:
+            continue
+        try:
+            holders = saved_holders[symbol]
             alerts = check_and_record_alerts_for_all(symbol, holders)
             coin_name = COINS.get(symbol, {}).get("name", symbol)
-            for alert_type, wallet, rank, _before, _after in alerts:
+            to_send = alerts[:10]
+            for alert_type, wallet, rank, _before, _after in to_send:
                 msg = f"{coin_name} 상위 {rank}위 지갑 보유량 변동"
                 send_alert(symbol, alert_type, wallet, msg)
             if alerts:
-                logger.info("%s 매수/매도 알럿 %d건 발송", symbol, len(alerts))
+                logger.info("%s 알럿 %d건 발송%s", symbol, len(to_send), f" (총 {len(alerts)}건 중)" if len(alerts) > 10 else "")
         except Exception as e:
-            logger.exception("Error checking %s: %s", symbol, e)
+            logger.exception("Error alerts %s: %s", symbol, e)
 
 
 def main():
-    logger.info("PEPE/SHIB 상위 100명 보유자 변동 감지 시작")
+    logger.info("PEPE/WETH 상위 100명 보유자 변동 감지 시작 (5분 주기)")
     init_db()
     # 즉시 1회 실행
     run_check()

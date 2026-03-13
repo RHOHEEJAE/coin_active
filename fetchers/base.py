@@ -41,5 +41,21 @@ def fetch_top_holders(symbol: str) -> List[HolderInfo]:
             limit=top_n,
             symbol=symbol,
         )
+    if fetcher == "etherscan_erc20":
+        from .etherscan import fetch_etherscan_top_holders
+        return fetch_etherscan_top_holders(
+            contract_address=coin_config["contract_address"],
+            limit=top_n,
+            symbol=symbol,
+            chain_id=coin_config.get("chain_id", 1),
+        )
+    if fetcher == "moralis_erc20":
+        from .moralis import fetch_moralis_top_holders
+        return fetch_moralis_top_holders(
+            contract_address=coin_config["contract_address"],
+            limit=top_n,
+            symbol=symbol,
+            chain=coin_config.get("moralis_chain", "eth"),
+        )
 
     return []

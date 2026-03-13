@@ -22,7 +22,7 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [now, setNow] = useState<Date | null>(null)
-  const [selectedSymbol, setSelectedSymbol] = useState<'PEPE' | 'SHIB'>('PEPE')
+  const [selectedSymbol, setSelectedSymbol] = useState<'PEPE' | 'WETH'>('PEPE')
 
   useEffect(() => {
     async function load() {
@@ -96,25 +96,32 @@ export default function DashboardPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
           <select
             value={selectedSymbol}
-            onChange={(e) => setSelectedSymbol(e.target.value as 'PEPE' | 'SHIB')}
+            onChange={(e) => setSelectedSymbol(e.target.value as 'PEPE' | 'WETH')}
             className="symbol-select"
             aria-label="코인 선택"
           >
             <option value="PEPE">PEPE (페페)</option>
-            <option value="SHIB">SHIB (시바이누)</option>
+            <option value="WETH">WETH (Wrapped Ether)</option>
           </select>
           <div className="pill">
             {now ? `업데이트: ${now.toLocaleString('ko-KR')}` : '업데이트 준비 중'}
           </div>
-          <div className={selectedSymbol === 'PEPE' ? 'hero-pepe' : 'hero-shiba'}>
-            <Image
-              src={selectedSymbol === 'PEPE' ? '/pepe.jpg' : '/shiba.jpg'}
-              alt={selectedSymbol === 'PEPE' ? 'PEPE' : 'Shiba Inu'}
-              fill
-              sizes="120px"
-              priority
-            />
-          </div>
+          {selectedSymbol === 'PEPE' && (
+            <div className="hero-pepe">
+              <Image
+                src="/pepe.jpg"
+                alt="PEPE"
+                fill
+                sizes="120px"
+                priority
+              />
+            </div>
+          )}
+          {selectedSymbol === 'WETH' && (
+            <div className="hero-weth">
+              <span aria-hidden>WETH</span>
+            </div>
+          )}
         </div>
       </div>
 

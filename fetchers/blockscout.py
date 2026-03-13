@@ -48,6 +48,8 @@ def fetch_blockscout_top_holders(
         return []
 
     rows = result_data or []
+    if not rows and symbol:
+        logger.info("%s: Blockscout에서 보유자 0명 반환 (해당 토큰 미지원일 수 있음 → SHIB는 Etherscan 사용)", symbol)
     # 보유량(value) 내림차순 정렬 후 상위 limit명
     try:
         rows = sorted(rows, key=lambda x: int(x.get("value") or 0), reverse=True)[:limit]

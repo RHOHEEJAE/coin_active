@@ -50,8 +50,8 @@
     {
       "rank": 8,
       "wallet_address": "0x76ec5a0d3632b2133d9f1980903305b62678fbd3",
-      "balance_raw": "8792915221368431723947907560611",
-      "balance_human": "8,792,915,221,368.431723947907560611"
+      "balance_raw": "8763929714122054911947907560611",
+      "balance_human": "8,763,929,714,122.054911947907560611"
     },
     {
       "rank": 9,
@@ -116,8 +116,8 @@
     {
       "rank": 19,
       "wallet_address": "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
-      "balance_raw": "3554229339525505998329060430698",
-      "balance_human": "3,554,229,339,525.505998329060430698"
+      "balance_raw": "3553082165749656200764411116629",
+      "balance_human": "3,553,082,165,749.656200764411116629"
     },
     {
       "rank": 20,
@@ -176,8 +176,8 @@
     {
       "rank": 29,
       "wallet_address": "0x28c6c06298d514db089934071355e5743bf21d60",
-      "balance_raw": "2400420723816054592251444324569",
-      "balance_human": "2,400,420,723,816.054592251444324569"
+      "balance_raw": "2402311014137484592251444324569",
+      "balance_human": "2,402,311,014,137.484592251444324569"
     },
     {
       "rank": 30,
@@ -254,8 +254,8 @@
     {
       "rank": 42,
       "wallet_address": "0x700e0841ce0892969d2f9cf523c6298b3ef056a6",
-      "balance_raw": "1984530364966927638298789356729",
-      "balance_human": "1,984,530,364,966.927638298789356729"
+      "balance_raw": "1984527766619317638298789356729",
+      "balance_human": "1,984,527,766,619.317638298789356729"
     },
     {
       "rank": 43,
@@ -320,8 +320,8 @@
     {
       "rank": 53,
       "wallet_address": "0x91d40e4818f4d4c57b4578d9eca6afc92ac8debe",
-      "balance_raw": "1194904952132611037195586529112",
-      "balance_human": "1,194,904,952,132.611037195586529112"
+      "balance_raw": "1194901273202611037195586529112",
+      "balance_human": "1,194,901,273,202.611037195586529112"
     },
     {
       "rank": 54,
@@ -499,15 +499,15 @@
     },
     {
       "rank": 83,
-      "wallet_address": "0x9c87e5efc511e27739abc88ad2bd8db304de3e27",
-      "balance_raw": "673281247132053131655532885902",
-      "balance_human": "673,281,247,132.053131655532885902"
+      "wallet_address": "0xefef30bd1cca520619306c95091ab18473febc5c",
+      "balance_raw": "677176094737943779995647374548",
+      "balance_human": "677,176,094,737.943779995647374548"
     },
     {
       "rank": 84,
-      "wallet_address": "0xefef30bd1cca520619306c95091ab18473febc5c",
-      "balance_raw": "673145111181603779995647374548",
-      "balance_human": "673,145,111,181.603779995647374548"
+      "wallet_address": "0x9c87e5efc511e27739abc88ad2bd8db304de3e27",
+      "balance_raw": "673281247132053131655532885902",
+      "balance_human": "673,281,247,132.053131655532885902"
     },
     {
       "rank": 85,
@@ -596,14 +596,616 @@
     {
       "rank": 99,
       "wallet_address": "0x11950d141ecb863f01007add7d1a342041227b58",
-      "balance_raw": "536801176822971262761209862087",
-      "balance_human": "536,801,176,822.971262761209862087"
+      "balance_raw": "536786410057586712733711814786",
+      "balance_human": "536,786,410,057.586712733711814786"
     },
     {
       "rank": 100,
       "wallet_address": "0x0fa5b9b2805e2d0f25dee42730cf4e30c9e7e0b1",
       "balance_raw": "524153330552191199169490246358",
       "balance_human": "524,153,330,552.191199169490246358"
+    }
+  ],
+  "WETH_top_holders": [
+    {
+      "rank": 1,
+      "wallet_address": "0xf04a5cc80b1e94c69b48f5ee68a08cd2f09a7c3e",
+      "balance_raw": "451362274104272510319048",
+      "balance_human": "451,362.274104272510319048"
+    },
+    {
+      "rank": 2,
+      "wallet_address": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+      "balance_raw": "316569014930128213704728",
+      "balance_human": "316,569.014930128213704728"
+    },
+    {
+      "rank": 3,
+      "wallet_address": "0x2f0b23f53734252bda2277357e97e1517d6b042a",
+      "balance_raw": "245875430424831557311185",
+      "balance_human": "245,875.430424831557311185"
+    },
+    {
+      "rank": 4,
+      "wallet_address": "0x3ee18b2214aff97000d974cf647e7c347e8fa585",
+      "balance_raw": "66402808628910000000000",
+      "balance_human": "66,402.80862891"
+    },
+    {
+      "rank": 5,
+      "wallet_address": "0xc3d688b66703497daa19211eedff47f25384cdc3",
+      "balance_raw": "55491466516275746917207",
+      "balance_human": "55,491.466516275746917207"
+    },
+    {
+      "rank": 6,
+      "wallet_address": "0x59cd1c87501baa753d0b5b5ab5d8416a45cd71db",
+      "balance_raw": "29292907656520229986983",
+      "balance_human": "29,292.907656520229986983"
+    },
+    {
+      "rank": 7,
+      "wallet_address": "0x21b8065d10f73ee2e260e5b47d3344d3ced7596e",
+      "balance_raw": "28691487788896831036428",
+      "balance_human": "28,691.487788896831036428"
+    },
+    {
+      "rank": 8,
+      "wallet_address": "0x4553e3bc6327006a63c5aa4cdac887f66b6a433e",
+      "balance_raw": "24564313084807424815034",
+      "balance_human": "24,564.313084807424815034"
+    },
+    {
+      "rank": 9,
+      "wallet_address": "0x3afdc9bca9213a35503b077a6072f3d0d5ab0840",
+      "balance_raw": "21673841164678494418411",
+      "balance_human": "21,673.841164678494418411"
+    },
+    {
+      "rank": 10,
+      "wallet_address": "0x57757e3d981446d585af0d9ae4d7df6d64647806",
+      "balance_raw": "19820730839598147193657",
+      "balance_human": "19,820.730839598147193657"
+    },
+    {
+      "rank": 11,
+      "wallet_address": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "balance_raw": "19668915344979434916077",
+      "balance_human": "19,668.915344979434916077"
+    },
+    {
+      "rank": 12,
+      "wallet_address": "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed",
+      "balance_raw": "19395136516374996227750",
+      "balance_human": "19,395.13651637499622775"
+    },
+    {
+      "rank": 13,
+      "wallet_address": "0x8eb8a3b98659cce290402893d0123abb75e3ab28",
+      "balance_raw": "19119074473960509257568",
+      "balance_human": "19,119.074473960509257568"
+    },
+    {
+      "rank": 14,
+      "wallet_address": "0x011ef1fe26d20077a59f38e9ad155b166ad87d40",
+      "balance_raw": "18616486809783157834233",
+      "balance_human": "18,616.486809783157834233"
+    },
+    {
+      "rank": 15,
+      "wallet_address": "0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9",
+      "balance_raw": "18457250899546988856176",
+      "balance_human": "18,457.250899546988856176"
+    },
+    {
+      "rank": 16,
+      "wallet_address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "balance_raw": "16851062387334151894723",
+      "balance_human": "16,851.062387334151894723"
+    },
+    {
+      "rank": 17,
+      "wallet_address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "balance_raw": "15509549544225512195408",
+      "balance_human": "15,509.549544225512195408"
+    },
+    {
+      "rank": 18,
+      "wallet_address": "0xbda109309f9fafa6dd6a9cb9f1df4085b27ee8ef",
+      "balance_raw": "14092094243250342437273",
+      "balance_human": "14,092.094243250342437273"
+    },
+    {
+      "rank": 19,
+      "wallet_address": "0x6e5492f8ea2370844ee098a56dd88e1717e4a9c2",
+      "balance_raw": "13892759268393275340887",
+      "balance_human": "13,892.759268393275340887"
+    },
+    {
+      "rank": 20,
+      "wallet_address": "0x003ca23fd5f0ca87d01f6ec6cd14a8ae60c2b97d",
+      "balance_raw": "13793969858992239053383",
+      "balance_human": "13,793.969858992239053383"
+    },
+    {
+      "rank": 21,
+      "wallet_address": "0x312e67b47a2a29ae200184949093d92369f80b53",
+      "balance_raw": "12222204362473436339884",
+      "balance_human": "12,222.204362473436339884"
+    },
+    {
+      "rank": 22,
+      "wallet_address": "0x6b44ba0a126a2a1a8aa6cd1adeed002e141bcd44",
+      "balance_raw": "12077409492122376916758",
+      "balance_human": "12,077.409492122376916758"
+    },
+    {
+      "rank": 23,
+      "wallet_address": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+      "balance_raw": "11662723741058714503955",
+      "balance_human": "11,662.723741058714503955"
+    },
+    {
+      "rank": 24,
+      "wallet_address": "0x9fc3dc011b461664c835f2527fffb1169b3c213e",
+      "balance_raw": "10000000000100000000000",
+      "balance_human": "10,000.0000001"
+    },
+    {
+      "rank": 25,
+      "wallet_address": "0xcc7d5785ad5755b6164e21495e07adb0ff11c2a8",
+      "balance_raw": "9106541317292551205937",
+      "balance_human": "9,106.541317292551205937"
+    },
+    {
+      "rank": 26,
+      "wallet_address": "0x08638ef1a205be6762a8b935f5da9b700cf7322c",
+      "balance_raw": "8528421554703726822472",
+      "balance_human": "8,528.421554703726822472"
+    },
+    {
+      "rank": 27,
+      "wallet_address": "0xc5c134a1f112efa96003f8559dba6fac0ba77692",
+      "balance_raw": "8424858035885965488496",
+      "balance_human": "8,424.858035885965488496"
+    },
+    {
+      "rank": 28,
+      "wallet_address": "0x556790e948b9920a8868bcafcc87d25e82e8a075",
+      "balance_raw": "7714810349790000000000",
+      "balance_human": "7,714.81034979"
+    },
+    {
+      "rank": 29,
+      "wallet_address": "0x030ba81f1c18d280636f32af80b9aad02cf0854e",
+      "balance_raw": "6976454910981614089228",
+      "balance_human": "6,976.454910981614089228"
+    },
+    {
+      "rank": 30,
+      "wallet_address": "0xce27283c276f4aa7a7e302b24bfea7668e264877",
+      "balance_raw": "6920000007078300000000",
+      "balance_human": "6,920.0000070783"
+    },
+    {
+      "rank": 31,
+      "wallet_address": "0x88ad09518695c6c3712ac10a214be5109a655671",
+      "balance_raw": "6858354921420043312871",
+      "balance_human": "6,858.354921420043312871"
+    },
+    {
+      "rank": 32,
+      "wallet_address": "0x448a5065aebb8e423f0896e6c5d525c040f59af3",
+      "balance_raw": "6602278070931506063623",
+      "balance_human": "6,602.278070931506063623"
+    },
+    {
+      "rank": 33,
+      "wallet_address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "balance_raw": "6504865447352594756216",
+      "balance_human": "6,504.865447352594756216"
+    },
+    {
+      "rank": 34,
+      "wallet_address": "0xb1c33b391c2569b737ec387e731e88589e8ec148",
+      "balance_raw": "6180493699445042585217",
+      "balance_human": "6,180.493699445042585217"
+    },
+    {
+      "rank": 35,
+      "wallet_address": "0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6",
+      "balance_raw": "6004500689053140971397",
+      "balance_human": "6,004.500689053140971397"
+    },
+    {
+      "rank": 36,
+      "wallet_address": "0xd567006082e89cc07f65d4ff6699dd5f2c55c687",
+      "balance_raw": "5926878086282458145536",
+      "balance_human": "5,926.878086282458145536"
+    },
+    {
+      "rank": 37,
+      "wallet_address": "0xeb5a8c825582965f1d84606e078620a84ab16afe",
+      "balance_raw": "5846764358948226462847",
+      "balance_human": "5,846.764358948226462847"
+    },
+    {
+      "rank": 38,
+      "wallet_address": "0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
+      "balance_raw": "5803099851103387570272",
+      "balance_human": "5,803.099851103387570272"
+    },
+    {
+      "rank": 39,
+      "wallet_address": "0x1715a3e4a142d8b698131108995174f37aeba10d",
+      "balance_raw": "5715786899864460433742",
+      "balance_human": "5,715.786899864460433742"
+    },
+    {
+      "rank": 40,
+      "wallet_address": "0x51c72848c68a965f66fa7a88855f9f7784502a7f",
+      "balance_raw": "5205365022806045691054",
+      "balance_human": "5,205.365022806045691054"
+    },
+    {
+      "rank": 41,
+      "wallet_address": "0x7d7e74467f813ea09b44fa43781f761ef6317751",
+      "balance_raw": "5020622489578317925524",
+      "balance_human": "5,020.622489578317925524"
+    },
+    {
+      "rank": 42,
+      "wallet_address": "0xacce2d0b77bcb844a1b95c64696b071ab8c7ada3",
+      "balance_raw": "5008039235233606385485",
+      "balance_human": "5,008.039235233606385485"
+    },
+    {
+      "rank": 43,
+      "wallet_address": "0x40e629a26d96baa6d81fae5f97205c2ab2c1ff29",
+      "balance_raw": "5001067738436441811204",
+      "balance_human": "5,001.067738436441811204"
+    },
+    {
+      "rank": 44,
+      "wallet_address": "0xa17581a9e3356d9a858b789d68b4d866e593ae94",
+      "balance_raw": "4992745992402444889841",
+      "balance_human": "4,992.745992402444889841"
+    },
+    {
+      "rank": 45,
+      "wallet_address": "0x1393ad734ea3c52865b4b541cf049dafd25c23a5",
+      "balance_raw": "4455382966524579218353",
+      "balance_human": "4,455.382966524579218353"
+    },
+    {
+      "rank": 46,
+      "wallet_address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+      "balance_raw": "4452848377578249414853",
+      "balance_human": "4,452.848377578249414853"
+    },
+    {
+      "rank": 47,
+      "wallet_address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
+      "balance_raw": "4368975435639248256162",
+      "balance_human": "4,368.975435639248256162"
+    },
+    {
+      "rank": 48,
+      "wallet_address": "0x2291f52bddc937b5b840d15e551e1da8c80c2b3c",
+      "balance_raw": "4000000000000000000000",
+      "balance_human": "4,000"
+    },
+    {
+      "rank": 49,
+      "wallet_address": "0x9c4fe5ffd9a9fc5678cfbd93aa2d4fd684b67c4c",
+      "balance_raw": "3951399726681248500323",
+      "balance_human": "3,951.399726681248500323"
+    },
+    {
+      "rank": 50,
+      "wallet_address": "0x4906cb897a7583e4c7571e3925c9460182fdf4c8",
+      "balance_raw": "3689466600000000000000",
+      "balance_human": "3,689.4666"
+    },
+    {
+      "rank": 51,
+      "wallet_address": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+      "balance_raw": "3675832235947803007082",
+      "balance_human": "3,675.832235947803007082"
+    },
+    {
+      "rank": 52,
+      "wallet_address": "0x4dceb440657f21083db8add07665f8ddbe1dcfc0",
+      "balance_raw": "3600000000000000000000",
+      "balance_human": "3,600"
+    },
+    {
+      "rank": 53,
+      "wallet_address": "0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852",
+      "balance_raw": "3510392168817460327486",
+      "balance_human": "3,510.392168817460327486"
+    },
+    {
+      "rank": 54,
+      "wallet_address": "0xa69babef1ca67a37ffaf7a485dfff3382056e78c",
+      "balance_raw": "3418434392783155364962",
+      "balance_human": "3,418.434392783155364962"
+    },
+    {
+      "rank": 55,
+      "wallet_address": "0xf3dbf5be1021b47df9d907c03bf29d11ed87a099",
+      "balance_raw": "3253914479909505529303",
+      "balance_human": "3,253.914479909505529303"
+    },
+    {
+      "rank": 56,
+      "wallet_address": "0xfa1fdbbd71b0aa16162d76914d69cd8cb3ef92da",
+      "balance_raw": "3247264487562155021722",
+      "balance_human": "3,247.264487562155021722"
+    },
+    {
+      "rank": 57,
+      "wallet_address": "0xcb3248e23f5524eac3c67ca0ee1c4b3cc27c743e",
+      "balance_raw": "3042117143202118640256",
+      "balance_human": "3,042.117143202118640256"
+    },
+    {
+      "rank": 58,
+      "wallet_address": "0xbfff21f342b33e0d990bd1fe007bb0031507da66",
+      "balance_raw": "3020936753424657536097",
+      "balance_human": "3,020.936753424657536097"
+    },
+    {
+      "rank": 59,
+      "wallet_address": "0x274d9e726844ab52e351e8f1272e7fc3f58b7e5f",
+      "balance_raw": "2963254359420124042086",
+      "balance_human": "2,963.254359420124042086"
+    },
+    {
+      "rank": 60,
+      "wallet_address": "0xbcd7254a1d759efa08ec7c3291b2e85c5dcc12ce",
+      "balance_raw": "2951574249441747726939",
+      "balance_human": "2,951.574249441747726939"
+    },
+    {
+      "rank": 61,
+      "wallet_address": "0x9c4955b92f34148dbcfdcd82e9c9ece5cf2badfe",
+      "balance_raw": "2946217360647876652965",
+      "balance_human": "2,946.217360647876652965"
+    },
+    {
+      "rank": 62,
+      "wallet_address": "0xa6cc3c2531fdaa6ae1a3ca84c2855806728693e8",
+      "balance_raw": "2909430341347388282817",
+      "balance_human": "2,909.430341347388282817"
+    },
+    {
+      "rank": 63,
+      "wallet_address": "0x80266b1e3f0c2cadae65a4ef5df20f3df3707ffb",
+      "balance_raw": "2800093896857313107261",
+      "balance_human": "2,800.093896857313107261"
+    },
+    {
+      "rank": 64,
+      "wallet_address": "0x7b3a0fb1811b5e862999bdb38303e5881536334c",
+      "balance_raw": "2766946755589661248059",
+      "balance_human": "2,766.946755589661248059"
+    },
+    {
+      "rank": 65,
+      "wallet_address": "0xce0adbb76a8ce7224bec6b586e18743aeb03250a",
+      "balance_raw": "2550000000100000000000",
+      "balance_human": "2,550.0000001"
+    },
+    {
+      "rank": 66,
+      "wallet_address": "0x00738c1d1ea10b2524e2e974c5f72e8ea06e3a3d",
+      "balance_raw": "2530170943043816238423",
+      "balance_human": "2,530.170943043816238423"
+    },
+    {
+      "rank": 67,
+      "wallet_address": "0x4f4495243837681061c4743b74b3eedf548d56a5",
+      "balance_raw": "2520934120439087201114",
+      "balance_human": "2,520.934120439087201114"
+    },
+    {
+      "rank": 68,
+      "wallet_address": "0x611c94a4e52aa51187596a7b660860575e2da243",
+      "balance_raw": "2520577614891600000000",
+      "balance_human": "2,520.5776148916"
+    },
+    {
+      "rank": 69,
+      "wallet_address": "0x04708077eca6bb527a5bbbd6358ffb043a9c1c14",
+      "balance_raw": "2496063100491131352675",
+      "balance_human": "2,496.063100491131352675"
+    },
+    {
+      "rank": 70,
+      "wallet_address": "0x821a96fbd4465d02726edbaa936a0d6d1032de46",
+      "balance_raw": "2472118325370782701777",
+      "balance_human": "2,472.118325370782701777"
+    },
+    {
+      "rank": 71,
+      "wallet_address": "0x4b7feceffe3b14ffd522e72b711b087f08bd98ab",
+      "balance_raw": "2459000000100000000000",
+      "balance_human": "2,459.0000001"
+    },
+    {
+      "rank": 72,
+      "wallet_address": "0xc186fa914353c44b2e33ebe05f21846f1048beda",
+      "balance_raw": "2368570679245174379902",
+      "balance_human": "2,368.570679245174379902"
+    },
+    {
+      "rank": 73,
+      "wallet_address": "0x2e40ddcb231672285a5312ad230185ab2f14ed2b",
+      "balance_raw": "2284422101667550216017",
+      "balance_human": "2,284.422101667550216017"
+    },
+    {
+      "rank": 74,
+      "wallet_address": "0xa4c567c662349bec3d0fb94c4e7f85ba95e208e4",
+      "balance_raw": "2284074353589033313791",
+      "balance_human": "2,284.074353589033313791"
+    },
+    {
+      "rank": 75,
+      "wallet_address": "0x25a84cc1014062463a829fbc2b0848798bf5e378",
+      "balance_raw": "2247281917561609037032",
+      "balance_human": "2,247.281917561609037032"
+    },
+    {
+      "rank": 76,
+      "wallet_address": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "balance_raw": "2168272285084700006560",
+      "balance_human": "2,168.27228508470000656"
+    },
+    {
+      "rank": 77,
+      "wallet_address": "0x52c77b0cb827afbad022e6d6caf2c44452edbc39",
+      "balance_raw": "2151888782803222773720",
+      "balance_human": "2,151.88878280322277372"
+    },
+    {
+      "rank": 78,
+      "wallet_address": "0x4dccc982aa583f5ebe804d8c5d4c77487a880078",
+      "balance_raw": "2144844451549790525192",
+      "balance_human": "2,144.844451549790525192"
+    },
+    {
+      "rank": 79,
+      "wallet_address": "0x308000d0169ebe674b7640f0c415f44c6987d04d",
+      "balance_raw": "2125465264209805165216",
+      "balance_human": "2,125.465264209805165216"
+    },
+    {
+      "rank": 80,
+      "wallet_address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "balance_raw": "2122873508923800397811",
+      "balance_human": "2,122.873508923800397811"
+    },
+    {
+      "rank": 81,
+      "wallet_address": "0xa250cc729bb3323e7933022a67b52200fe354767",
+      "balance_raw": "2077539672425987779170",
+      "balance_human": "2,077.53967242598777917"
+    },
+    {
+      "rank": 82,
+      "wallet_address": "0x7486ff76f69872d27b22dada4078bd55b36a5324",
+      "balance_raw": "2056354428112113208221",
+      "balance_human": "2,056.354428112113208221"
+    },
+    {
+      "rank": 83,
+      "wallet_address": "0x894d55be079e7e19fe526ac22b0786b7afe18e7e",
+      "balance_raw": "2055767163087113327737",
+      "balance_human": "2,055.767163087113327737"
+    },
+    {
+      "rank": 84,
+      "wallet_address": "0x6f3f68525e5edad6f06f8b0eae0dd7b9f695af13",
+      "balance_raw": "2032000000100000000000",
+      "balance_human": "2,032.0000001"
+    },
+    {
+      "rank": 85,
+      "wallet_address": "0xec34231dfdf6144a539a4914dc14481914afad1c",
+      "balance_raw": "2013000000000000000000",
+      "balance_human": "2,013"
+    },
+    {
+      "rank": 86,
+      "wallet_address": "0x1154db30d92b1d504719738a13c754b77cf6b75d",
+      "balance_raw": "2012328767123287670000",
+      "balance_human": "2,012.32876712328767"
+    },
+    {
+      "rank": 87,
+      "wallet_address": "0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
+      "balance_raw": "2008411349901579283648",
+      "balance_human": "2,008.411349901579283648"
+    },
+    {
+      "rank": 88,
+      "wallet_address": "0x39baf3b65c23f6027e6f7f78c184765ccae5bad2",
+      "balance_raw": "2000000000000000000000",
+      "balance_human": "2,000"
+    },
+    {
+      "rank": 89,
+      "wallet_address": "0x6555e1cc97d3cba6eaddebbcd7ca51d75771e0b8",
+      "balance_raw": "1966493836100000000000",
+      "balance_human": "1,966.4938361"
+    },
+    {
+      "rank": 90,
+      "wallet_address": "0x2c683fad51da2cd17793219cc86439c1875c353e",
+      "balance_raw": "1952441803144065737467",
+      "balance_human": "1,952.441803144065737467"
+    },
+    {
+      "rank": 91,
+      "wallet_address": "0x582e3da39948c6339433008703211ad2c13eb2ac",
+      "balance_raw": "1938715723557787136830",
+      "balance_human": "1,938.71572355778713683"
+    },
+    {
+      "rank": 92,
+      "wallet_address": "0xbb2b8038a1640196fbe3e38816f3e67cba72d940",
+      "balance_raw": "1917880730429125391665",
+      "balance_human": "1,917.880730429125391665"
+    },
+    {
+      "rank": 93,
+      "wallet_address": "0x769db46f39c42ee7ad5f71f4167c47edd281e767",
+      "balance_raw": "1879973712282982985822",
+      "balance_human": "1,879.973712282982985822"
+    },
+    {
+      "rank": 94,
+      "wallet_address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "balance_raw": "1841902700706556848083",
+      "balance_human": "1,841.902700706556848083"
+    },
+    {
+      "rank": 95,
+      "wallet_address": "0xabfc6710d3dfd07f0f9fc110015963f6b8f1743a",
+      "balance_raw": "1825348782590100000000",
+      "balance_human": "1,825.3487825901"
+    },
+    {
+      "rank": 96,
+      "wallet_address": "0x30d9687977809b45d48fbb6a74a1eed835e2a568",
+      "balance_raw": "1799000000000000000000",
+      "balance_human": "1,799"
+    },
+    {
+      "rank": 97,
+      "wallet_address": "0xe3d41d19564922c9952f692c5dd0563030f5f2ef",
+      "balance_raw": "1782169729811455858657",
+      "balance_human": "1,782.169729811455858657"
+    },
+    {
+      "rank": 98,
+      "wallet_address": "0xca7c2771d248dcbe09eabe0ce57a62e18da178c0",
+      "balance_raw": "1777780151311342842130",
+      "balance_human": "1,777.78015131134284213"
+    },
+    {
+      "rank": 99,
+      "wallet_address": "0x1f2f10d1c40777ae1da742455c65828ff36df387",
+      "balance_raw": "1777598461648916152724",
+      "balance_human": "1,777.598461648916152724"
+    },
+    {
+      "rank": 100,
+      "wallet_address": "0x25431341a5800759268a6ac1d3cd91c029d7d9ca",
+      "balance_raw": "1763005635465425749156",
+      "balance_human": "1,763.005635465425749156"
     }
   ]
 }
