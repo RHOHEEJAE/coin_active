@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-PEPE 상위 100명 보유자 조회 및 전원 보유량 변동 추적(매수/매도 알럿).
+PEPE, SHIB 등 상위 100명 보유자 조회 및 전원 보유량 변동 추적(매수/매도 알럿).
 """
 
 import logging
@@ -47,7 +47,7 @@ def run_check():
 
 
 def main():
-    logger.info("PEPE 상위 100명 보유자 변동 감지 시작")
+    logger.info("PEPE/SHIB 상위 100명 보유자 변동 감지 시작")
     init_db()
     # 즉시 1회 실행
     run_check()

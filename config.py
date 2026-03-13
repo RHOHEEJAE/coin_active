@@ -28,12 +28,20 @@ DATABASE_URL = (
     else f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 )
 
-# ??? ?? (PEPE? ??)
+# ??? ?? (PEPE, SHIB ? Blockscout ERC-20)
 COINS = {
     "PEPE": {
         "name": "??",
         "fetcher": "blockscout_erc20",
         "contract_address": "0x6982508145454Ce325dDbE47a25d4ec3d2311933",
+        "blockscout_base_url": "https://eth.blockscout.com/api",
+        "decimals": 18,
+        "top_holders_count": 100,
+    },
+    "SHIB": {
+        "name": "????",
+        "fetcher": "blockscout_erc20",
+        "contract_address": "0x95aD61b0a150d79219dC64CdFf2aDCEe75dF6a51",
         "blockscout_base_url": "https://eth.blockscout.com/api",
         "decimals": 18,
         "top_holders_count": 100,

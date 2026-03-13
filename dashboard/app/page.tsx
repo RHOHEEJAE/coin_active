@@ -22,19 +22,22 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [now, setNow] = useState<Date | null>(null)
+  const [selectedSymbol, setSelectedSymbol] = useState<'PEPE' | 'SHIB'>('PEPE')
 
   useEffect(() => {
     async function load() {
+      setLoading(true)
       try {
         const [holdersRes, alertsRes] = await Promise.all([
           supabase
             .from('top_holders')
             .select('symbol, rank, wallet_address, balance_human, updated_at')
-            .eq('symbol', 'PEPE')
+            .eq('symbol', selectedSymbol)
             .order('rank'),
           supabase
             .from('holder_alerts')
             .select('id, symbol, alert_type, wallet_address, rank, balance_before, balance_after, created_at')
+            .eq('symbol', selectedSymbol)
             .order('created_at', { ascending: false })
             .limit(200),
         ])
@@ -72,7 +75,7 @@ export default function DashboardPage() {
     load()
     const intervalId = setInterval(load, 60 * 1000) // 1분마다 리프레시
     return () => clearInterval(intervalId)
-  }, [])
+  }, [selectedSymbol])
 
   if (loading) return <div className="section">로딩 중...</div>
   if (error) return <div className="section">에러: {error}</div>
@@ -85,19 +88,28 @@ export default function DashboardPage() {
     <div className="container">
       <div className="header-row">
         <div>
-          <div className="title">PEPE 상위 100 보유자 모니터링</div>
+          <div className="title">{selectedSymbol} 상위 100 보유자 모니터링</div>
           <div className="subtitle">
             상위 보유자 지갑의 실시간 보유량 변화와 매수·매도 알럿을 한눈에 확인합니다.
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <select
+            value={selectedSymbol}
+            onChange={(e) => setSelectedSymbol(e.target.value as 'PEPE' | 'SHIB')}
+            className="symbol-select"
+            aria-label="코인 선택"
+          >
+            <option value="PEPE">PEPE (페페)</option>
+            <option value="SHIB">SHIB (시바이누)</option>
+          </select>
           <div className="pill">
             {now ? `업데이트: ${now.toLocaleString('ko-KR')}` : '업데이트 준비 중'}
           </div>
-          <div className="hero-pepe">
+          <div className={selectedSymbol === 'PEPE' ? 'hero-pepe' : 'hero-shiba'}>
             <Image
-              src="/pepe.jpg"
-              alt="Make Memecoins Great Again"
+              src={selectedSymbol === 'PEPE' ? '/pepe.jpg' : '/shiba.jpg'}
+              alt={selectedSymbol === 'PEPE' ? 'PEPE' : 'Shiba Inu'}
               fill
               sizes="120px"
               priority
@@ -133,7 +145,7 @@ export default function DashboardPage() {
           <div className="card">
             <div className="card-header">
               <div>
-                <div className="card-title">PEPE 상위 100명 보유자</div>
+                <div className="card-title">{selectedSymbol} 상위 100명 보유자</div>
                 <div className="card-caption">현재 기준 상위 지갑과 보유량</div>
               </div>
             </div>
@@ -143,7 +155,7 @@ export default function DashboardPage() {
                   <tr>
                     <th>순위</th>
                     <th>지갑</th>
-                    <th>보유량(PEPE)</th>
+                    <th>보유량({selectedSymbol})</th>
                     <th>갱신일시</th>
                   </tr>
                 </thead>
