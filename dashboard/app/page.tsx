@@ -61,13 +61,17 @@ export default function DashboardPage() {
             .slice(-24)
         )
         setNow(new Date())
+        setError(null)
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load')
       } finally {
         setLoading(false)
       }
     }
+
     load()
+    const intervalId = setInterval(load, 60 * 1000) // 1분마다 리프레시
+    return () => clearInterval(intervalId)
   }, [])
 
   if (loading) return <div className="section">로딩 중...</div>
