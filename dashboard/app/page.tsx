@@ -22,7 +22,7 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [now, setNow] = useState<Date | null>(null)
-  const [selectedSymbol, setSelectedSymbol] = useState<'PEPE' | 'WETH'>('PEPE')
+  const [selectedSymbol, setSelectedSymbol] = useState<'PEPE' | 'WETH' | 'XRP'>('PEPE')
 
   useEffect(() => {
     async function load() {
@@ -96,12 +96,13 @@ export default function DashboardPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
           <select
             value={selectedSymbol}
-            onChange={(e) => setSelectedSymbol(e.target.value as 'PEPE' | 'WETH')}
+            onChange={(e) => setSelectedSymbol(e.target.value as 'PEPE' | 'WETH' | 'XRP')}
             className="symbol-select"
             aria-label="코인 선택"
           >
             <option value="PEPE">PEPE (페페)</option>
             <option value="WETH">WETH (Wrapped Ether)</option>
+            <option value="XRP">XRP (리플)</option>
           </select>
           <div className="pill">
             {now ? `업데이트: ${now.toLocaleString('ko-KR')}` : '업데이트 준비 중'}
@@ -119,7 +120,24 @@ export default function DashboardPage() {
           )}
           {selectedSymbol === 'WETH' && (
             <div className="hero-weth">
-              <span aria-hidden>WETH</span>
+              <Image
+                src="/weth.jpg"
+                alt="WETH"
+                fill
+                sizes="120px"
+                priority
+              />
+            </div>
+          )}
+          {selectedSymbol === 'XRP' && (
+            <div className="hero-xrp">
+              <Image
+                src="/xrp.jpg"
+                alt="XRP"
+                fill
+                sizes="120px"
+                priority
+              />
             </div>
           )}
         </div>
@@ -172,7 +190,7 @@ export default function DashboardPage() {
                       <td>{r.rank}</td>
                       <td>
                         <a
-                          href={`https://etherscan.io/address/${r.wallet_address}`}
+                          href={selectedSymbol === 'XRP' ? `https://xrpscan.com/account/${r.wallet_address}` : `https://etherscan.io/address/${r.wallet_address}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >

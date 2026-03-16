@@ -48,6 +48,12 @@ COINS = {
         "decimals": 18,
         "top_holders_count": 100,
     },
+    "XRP": {
+        "name": "??",
+        "fetcher": "xrpscan_native",
+        "decimals": 6,
+        "top_holders_count": 100,
+    },
 }
 
 # ?? N? ???

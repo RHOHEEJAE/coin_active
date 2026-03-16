@@ -27,12 +27,12 @@ logger = logging.getLogger(__name__)
 def run_check():
     """
     5분 주기:
-    1단계) PEPE 상위 100명 저장 → WETH 상위 100명 저장 (바로 이어서)
-    2단계) PEPE 알럿 업데이트 → WETH 알럿 업데이트
+    1단계) PEPE → WETH → XRP 상위 100명 저장 (연속)
+    2단계) 코인별 알럿 업데이트 및 발송
     """
     saved_holders = {}  # symbol -> holders (2단계에서 사용)
 
-    # 1단계: 코인별 상위 100명 보유자만 저장 (PEPE → WETH 연속)
+    # 1단계: 코인별 상위 100명 보유자만 저장
     for symbol in COINS:
         try:
             logger.info("수집 시작: %s", symbol)
@@ -67,7 +67,7 @@ def run_check():
 
 
 def main():
-    logger.info("PEPE/WETH 상위 100명 보유자 변동 감지 시작 (5분 주기)")
+    logger.info("PEPE/WETH/XRP 상위 100명 보유자 변동 감지 시작 (5분 주기)")
     init_db()
     # 즉시 1회 실행
     run_check()

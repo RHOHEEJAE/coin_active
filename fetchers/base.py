@@ -57,5 +57,8 @@ def fetch_top_holders(symbol: str) -> List[HolderInfo]:
             symbol=symbol,
             chain=coin_config.get("moralis_chain", "eth"),
         )
+    if fetcher == "xrpscan_native":
+        from .xrpscan import fetch_xrpscan_top_holders
+        return fetch_xrpscan_top_holders(limit=top_n, symbol=symbol)
 
     return []
