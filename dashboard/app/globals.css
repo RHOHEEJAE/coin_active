@@ -56,7 +56,9 @@ a {
   outline: none;
 }
 .hero-pepe,
-.hero-shiba {
+.hero-shiba,
+.hero-weth,
+.hero-xrp {
   position: relative;
   width: 110px;
   height: 70px;
@@ -71,30 +73,10 @@ a {
   border: 1px solid rgba(234, 88, 12, 0.8);
 }
 .hero-weth {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 110px;
-  height: 70px;
-  border-radius: 999px;
   border: 1px solid rgba(96, 165, 250, 0.7);
-  background: linear-gradient(135deg, rgba(30, 64, 175, 0.4), rgba(59, 130, 246, 0.2));
-  font-size: 1rem;
-  font-weight: 600;
-  color: #93c5fd;
 }
 .hero-xrp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 110px;
-  height: 70px;
-  border-radius: 999px;
   border: 1px solid rgba(34, 197, 94, 0.7);
-  background: linear-gradient(135deg, rgba(22, 101, 52, 0.4), rgba(34, 197, 94, 0.2));
-  font-size: 1rem;
-  font-weight: 600;
-  color: #86efac;
 }
 .grid {
   display: grid;
