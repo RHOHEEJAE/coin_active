@@ -52,6 +52,11 @@ def run_check():
     for symbol in COINS:
         if symbol not in saved_holders:
             continue
+        # XRP는 rich list 데이터가 일 1회 갱신이고, 알럿 계산에서 병목이 될 수 있어
+        # 상위 보유자 저장만 하고 알럿은 비활성화한다.
+        if symbol == "XRP":
+            logger.info("XRP: 알럿 계산은 건너뜀 (상위 보유자 저장만 사용)")
+            continue
         try:
             holders = saved_holders[symbol]
             alerts = check_and_record_alerts_for_all(symbol, holders)
