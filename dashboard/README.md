@@ -1,4 +1,4 @@
-# PEPE 보유자 · 매수/매도 차트 대시보드 (Vercel 배포용)
+# PEPE 보유자 · 매수/매도 차트 대시보드 (Vercel 배포용)d
 
 Supabase에 쌓인 `top_holders`, `holder_alerts`를 읽어서 테이블·차트로 보여주는 Next.js 앱입니다.
 
